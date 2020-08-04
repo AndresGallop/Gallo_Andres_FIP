@@ -16,22 +16,32 @@ body{
 	width: 100%;
 	height: 88px;
 	background-image: url(../images/abstract2.jpg);
-	background-position: 1250px 1950px;
+	background-position: 150px 1950px;
+}
+
+#menuNav{
+	background-color: yellow;
+	display: none;
+	justify-content: flex-end;
 }
 
 .logo{
-	width: 85px;
+	width: 15%;
+	margin-left: 2%;
 	height: 75px;
-	background-color: red;
+	background-image: url(../images/marklogo.png);
+	background-position: center;
+	background-size: cover;
 	margin-right: 480px;
 }
 
 ul{
-	width: 500px;
+	width: 70%;
 	margin:0;
 	list-style: none;
 	display: flex;
 	justify-content: flex-end;
+	background-color: green;
 }
 
 a{
@@ -58,6 +68,7 @@ a{
 	flex-direction: column;
 }
 
+
 .block{
 	display: flex;
 	align-items: center;
@@ -69,27 +80,24 @@ a{
 	background-color: #FF9F07;
 }
 
-.block p{	width: 250px;	margin-top: -35px; color: white;}/*99999999999999999999999999999*/
+.block p{	width: 70%;	margin-top: -35px; color: white;font-size: 32px ;}/*99999999999999999999999999999*/
+.block h1{ color: white;}
 
 .one{background-color: #01515D;}
 .two{background-color: #4C8F7B;}
 .three{background-color: #87CBAD;}
 /***************************************************/
-h2{
-	font-family: 'Domine', serif;
-}
 
-h3{
-	font-family: 'Domine', serif;
-}
 
 h1{
-	font-family: 'Domine', serif;
+	font-family: 'Oswald', sans-serif;
+	font-size: 50px;
 }
 
 p{
-	font-family: 'Domine', serif;
-font-family: 'Roboto', sans-serif;
+	font-family: 'Comfortaa', cursive;
+	line-height: normal;
+	font-size: 25px;
 }
 
 /***************************************************/
@@ -327,23 +335,22 @@ font-family: 'Roboto', sans-serif;
 }
 
 .buttones{
-	margin-top: 20px;
 	display: flex;
-	justify-content: space-between;
+	width: 20%;
+	height: 100px;
 	flex-direction: column;
-	align-items: center;
-	width: 320px;
-	height: 80px;
-
+	justify-content: space-around;
 }
 
-.buttonf{
+.buttones button{
+	margin-top: 20px;
 	display: flex;
-	width: 130px;
-	height: 28px;
-	border: solid 2px white;
 	justify-content: center;
-	align-items:flex-end;
+	align-items: center;
+	width: 100%;
+	height: 40px;
+	border: solid 2px white;
+
 }
 
 .footer h2{
@@ -363,8 +370,8 @@ font-family: 'Roboto', sans-serif;
 
 .line{
 	margin-bottom: 15px;
-	width: 1000px;
-	height: 1px;
+	width: 90%;
+	height: 0.5px;
 	background-color: grey;
 }
 
@@ -377,8 +384,18 @@ font-family: 'Roboto', sans-serif;
 
 @media screen and (min-width: 1280px) {
 
+	.menu{
+		background-position: 1350px 1950px;
+	}
+
+	#menuNav{
+		background-color: yellow;
+		display: flex;
+		justify-content: flex-end;
+	}
+
 	.logo{
-		width: 250px;
+		width: 5%;
 	}
 
   .infoboxes{
@@ -486,8 +503,13 @@ font-family: 'Roboto', sans-serif;
 		justify-content: space-between;
 		flex-direction: row;
 		align-items: center;
-		width: 320px;
+		width: 30%;
 		height: 80px;
+	}
+
+	.buttones button{
+		width: 45%;
+		height: 40px;
 	}
 }
 
