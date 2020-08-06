@@ -673,6 +673,7 @@ video{
 	width: 85%;
 	text-align: center;
 	font-size: 14px;
+	margin: 15px;
 }
 
 #bimage{
@@ -683,8 +684,8 @@ video{
 	overflow: hidden;
 }
 
-#ads { position:relative; width:1850px; transition: all .5s; }
-#ads img { max-width: 21.7%; float:left; }
+#ads { position:relative; width:2000px; transition: all .5s; }
+#ads img { max-width: 20%; float:left; }
 
 #bottomNav{
 	width: 100%;
@@ -704,11 +705,24 @@ video{
 	height: 20px;
 	display:inline;
 	list-style-type:none;
-	margin:10px;
+	margin:20px;
 	cursor:pointer;
-	background-color: grey;
-	border-radius: 50%;
 }
+
+.seemento{
+	width: 32px;
+	height: 32px;
+}
+
+.seemento:hover{
+	transform: scale(1.3);
+}
+
+.prom1{	background-image: url(../images/flagg.png);	background-position: center;	background-size: cover;}
+.prom2{	background-image: url(../images/flagc.png);	background-position: center;	background-size: cover;}
+.prom3{	background-image: url(../images/flagi.png);	background-position: center;	background-size: cover;}
+.prom4{	background-image: url(../images/flage.png);	background-position: center;	background-size: cover;}
+.prom5{	background-image: url(../images/flageu.png);	background-position: center;	background-size: cover;}
 
 .bslogan{
 	display: flex;
@@ -850,18 +864,6 @@ video{
   animation-name: square;
   animation-duration: 8s;
   margin-left: 200px;
-}
-
-@keyframes rotation {
-  0% {
-    transform: rotate3d(0, 1, 0, 0deg);
-  }
-  50% {
-    transform: rotate3d(0, 1, 0, 180deg);
-  }
-  100% {
-    transform: rotate3d(0, 1, 0, 360deg);
-  }
 }
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/

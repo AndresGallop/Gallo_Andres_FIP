@@ -5,7 +5,7 @@
 	let button = document.querySelector("#button"),
 			burgerCon = document.querySelector("#burgerCon"),
       selector = document.querySelectorAll(".seemento"),
-      proms = document.querySelector("#ads")
+      proms = document.querySelector("#ads");
 
 	//function hamburgerMenu() {
 	//	burgerCon.classList.toggle("slideToggle");
@@ -18,7 +18,7 @@
 
     proms.style.right = `${this.dataset.offset* 400}px`;
 
-		debugger;
+
 
     //and also show the house name
   //  houseName.textContent = `House ${houseInfo[this.dataset.offset][0]}`;
@@ -26,6 +26,6 @@
     //debugger;
   }
 
-  selector.forEach(sel => sel.addEventListener("onclick", animateBanner));
+  selector.forEach(sel => sel.addEventListener("click", animateBanner));
 	//button.addEventListener("click", hamburgerMenu);
 })();
