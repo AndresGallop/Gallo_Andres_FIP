@@ -486,11 +486,17 @@ h2{
 }
 
 .aimage{
+	display: flex;
 	width:100%;
 	height: 70%;
-	background-image: url(../images/abstract2.jpg);
 	background-size: cover;
 	background-position:center;
+	justify-content: center;
+	align-items: center;
+}
+
+video{
+	width: 90%;
 }
 
 .acompany{
@@ -517,10 +523,9 @@ h2{
 	background-color: #4C8F7B;
 	align-items: center;
 	color: white;
-	font-size: 30px;
+	font-size: 20px;
 	padding-left: 5%;
 	padding-right: 5%;
-	font-size: 25px;
 	text-align: center;
 }
 
@@ -532,10 +537,9 @@ h2{
 	background-color: #4C8F7B;
 	align-items: center;
 	color: white;
-	font-size: 30px;
+	font-size: 20px;
 	padding-left: 5%;
 	padding-right: 5%;
-	font-size: 25px;
 	text-align: center;
 }
 
@@ -553,6 +557,7 @@ h2{
 	margin-right: 20px;
 }
 
+
 .amission{
 	display: flex;
 	height: 95%;
@@ -567,14 +572,14 @@ h2{
 
 .alabel {
 	display: flex;
+	height: 40%;
+	font-size: 20px;
 	width: 100%;
-	height: 100px;
 	justify-content: center;
 	align-items: center;
 	color: white;
 	background-color: rgba(26, 110, 68, 0.6);
 	font-family: 'Oswald', sans-serif;
-	font-size: 45px;
 }
 
 .acontactinfo{
@@ -847,12 +852,16 @@ h2{
   margin-left: 200px;
 }
 
-@keyframes square {
-  0%   {background-color:white; left:-360px; top:-330px;}
-  25%  {background-color:red; left:700px; top:-330px;}
-  50%  {background-color:yellow; left:700px; top:220px;}
-  75%  {background-color:black; left:-360px; top:220px;}
-  100% {background-color:white; left:-360px; top:-330px;}
+@keyframes rotation {
+  0% {
+    transform: rotate3d(0, 1, 0, 0deg);
+  }
+  50% {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
 }
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -1060,7 +1069,6 @@ h2{
 .aimage{
 	width: 60%;
 	height: 400px;
-	background-image: url(../images/abstract.jpg);
 	background-size: cover;
 	background-position:center;
 	margin-bottom: 25px;
@@ -1115,6 +1123,10 @@ h2{
 	margin-top: 2px;
 }
 
+.aprocess:hover{
+	background-image: url(../images/barrel.png);
+}
+
 .amission{
 	display: flex;
 	justify-content: center;
@@ -1125,12 +1137,19 @@ h2{
 	margin-bottom: 0px;
 }
 
+.amission:hover{
+	background-image: url(../images/glass.jpg);
+}
+
 .alabel {
 	display: flex;
+
 	width: 100%;
 	justify-content: center;
 	align-items: center;
 	color: white;
+	height: 20%;
+	font-size: 20px;
 	background-color: rgba(26, 110, 68, 0.80);
 	font-family: 'Oswald', sans-serif;
 }
