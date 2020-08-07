@@ -55,7 +55,7 @@
 			<div id="titles"><h1>WHY GEHWOL?</h1></div>
 
 			<div class="reasons">
-			<div class="bootlepresented"></div>
+			<div class="bootlepresented"><img src="images/bottle.png" alt=""></div>
 
 			<section class="inf trigo">
 				<div class="imga A"></div>
@@ -84,7 +84,7 @@
 		</div>
 
 		<section class="giftCard">
-			<div class="cardImg"></div>
+			<div class="cardImg"><img src="images/giftcard.jpg" alt=""></div>
 			<div class="form">
 
 				<h1>GEHWOL BEER GIFT CARD</h1>
@@ -100,7 +100,7 @@
 				</div>
 
 				<div class="button">
-					<button type="button" onclick="alert('Geat Choose!')">ADD TO CART</button>
+					<button id="index" type="button" onclick="alert('Geat Choose!')">ADD TO CART</button>
 				</div>
 			</div>
 		</section>
@@ -121,6 +121,32 @@
 	    		<img src="images/giftcard2.jpg"/>
 	        </div>
 			</section>
+
+			<section id="pimage">
+		    	<div id="prods" style="right: 0px;"> <!-- add in all of the images to make a scrolling "banner" -->
+		    		<img src="images/prod1.png"/>
+		    		<img src="images/prod2.png"/>
+		    		<img src="images/prod3.png"/>
+		    		<img src="images/prod4.png"/>
+		    		<img src="images/prod5.png"/>
+						<img src="images/prod6.png"/>
+		        </div>
+		    </section>
+
+				<nav id="bottomNa">
+		    	<ul id="navLis">
+
+		        	<!-- custom data attribute, allowing to pass custom data https://developer.mozilla.org/en/docs/Web/API/HTMLElement/dataset -->
+		            <li><div class="see prod1" data-offset="0"></div></li>
+		            <li><div class="see prod2" data-offset="1"></div></li>
+		            <li><div class="see prod3" data-offset="2"></div></li>
+		            <li><div class="see prod4" data-offset="3"></div></li>
+		            <li><div class="see prod5" data-offset="4"></div></li>
+								<li><div class="see prod6" data-offset="5"></div></li>
+
+
+		        </ul>
+		    </nav>
 
 		</div>
 
