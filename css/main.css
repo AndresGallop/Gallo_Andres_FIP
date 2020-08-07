@@ -12,49 +12,85 @@ body{
 
 .menu{
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
+	justify-content: space-around;
 	width: 100%;
-	height: 70px;
+	height: auto;/*/*//*/*/
 	background-image: url(../images/abstract2.jpg);
-	background-position: 150px 1950px;
+	background-repeat: no-repeat;
+	background-position: 1px;
+	z-index: 1;
+	position: fixed;
 }
 
-#menuNav{
-	display: none;
-	justify-content: flex-end;
+#undermenu{
+	width: 100%;
+	height: 70px;
+}
+
+.logo{
+	width: 60px;
+	margin: 10px;
+	margin-left: 10px;
+	height: 50px;
+	background-image: url(../images/logos.png);
+	background-position: center;
+	align-self: flex-start;
+	background-size: cover;
+}
+
+#blur{
+	margin-top: 0px;
 }
 
 #menuNav a{
 	font-family: 'Oswald', sans-serif;
-	font-size: 22px;
+	font-size: 30px;
 	color: White;
 }
 
-.logo{
-	width: 15%;
-	margin-left: 2%;
-	height: 75px;
-	background-image: url(../images/marklogo.png);
-	background-position: center;
-	background-size: cover;
-	margin-right: 480px;
+#menuNav {
+  display: flex;
+  flex-direction: column;
+	text-align: right;
+	width: 60%;
 }
 
-ul{
-	width: 70%;
-	margin:0;
-	list-style: none;
-	display: flex;
-	justify-content: flex-end;
+#hamenu {margin-bottom: 0px;}
+
+#hamenu {
+  background: url(../images/hambur.png) no-repeat;
+	background-size: contain;
+  border: 0px;
+	margin: 20px;
+  width: 40px;
+  height: 40px;
+  transition: all 400ms ease;
+	margin-top: 20px;
+	align-self: flex-start;
 }
 
-a{
-	display: block;
-	padding: 10px 20px;
+#hamenu.expanded {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+	background-image: url(../images/x.png);
+
+  transform: rotate(90deg);
+}
+
+#menuNav li a {
+  display: block;
+  color: white;
+  padding: 10px 0;
 	text-decoration: none;
-	color: Black;
+  text-align: center;
 }
+
+#menuNav li {border-bottom: 1px solid #efefef; }
+#menuNav li:last-child { border-bottom: 0px ;margin-bottom: 2px; }
+
+#burgerCon { display: none; margin-top: 20px; }
+#burgerCon.slideToggle {display: block;}
 
 .image{
 	display: flex;
@@ -112,7 +148,7 @@ h1{
 }
 
 p{
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Roboto', sans-serif;
 	line-height: normal;
 }
 
@@ -120,7 +156,7 @@ p{
 
 .pprotext{
 	font-family: 'Domine', serif;
-font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .reasons{
@@ -797,7 +833,7 @@ video{
 
 .laform label{
 	color:white;
-	font-family: 'Comfortaa', cursive;
+	font-family: 'Roboto', sans-serif;
 }
 
 .ctex{
@@ -870,17 +906,88 @@ video{
 
 @media screen and (min-width: 1280px) {
 
-	.menu{
-		background-position: 1350px 1950px;
-	}
-
-	#menuNav{
+	ul{
+		width: 70%;
+		margin:0;
+		list-style: none;
 		display: flex;
 		justify-content: flex-end;
 	}
 
+	a{
+		display: block;
+		padding: 10px 20px;
+		text-decoration: none;
+		color: Black;
+	}
+
+	.menu{
+		background-position: 400px 1950px;
+		background-repeat: repeat;
+	}
+
+	.menu{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		height: auto;/*/*//*/*/
+		background-image: url(../images/abstract2.jpg);
+		position: relative;
+	}
+
+	#menuNav {
+	  display: flex;
+		justify-content: space-around;
+	  flex-direction: row;
+		text-align: none;
+		width: 50%;
+	}
+
+	#menuNav li a {
+		font-family: 'Oswald', sans-serif;
+		font-size: 25px;
+		color: White;
+	  display: block;
+	  color: white;
+	  padding: 10px 0;
+		text-decoration: none;
+	  text-align: center;
+	}
+
+	#menuNav li a:hover{
+		transform: translateY(-2px);
+		color: rgb(0, 250, 220);
+	}
+
+	#burgerCon{
+		margin-top: auto;
+		display: flex;
+		justify-content: flex-end;
+		justify-content: space-around;
+		margin-left: auto;
+		width: 90%;
+		height: 100%;
+	}
+
+	#menuNav ul{
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+		height: 100%;
+		margin-left: 20px;
+	}
+
+	#menuNav li {border-bottom: 0px solid #efefef; }
+	#menuNav li:last-child { border-bottom: 0px ;margin-bottom: 2px; }
+
+	#hamenu{
+		display: none;
+	}
+
 	.logo{
-		width: 5%;
+		background-image: url(../images/logotype.png);
+		width: 15%;
 	}
 
 	.image{
@@ -910,7 +1017,7 @@ video{
 	}
 
 	.infoboxes p{
-		font-family: 'Comfortaa', cursive;
+		font-family: 'Roboto', sans-serif;
 		line-height: normal;
 		font-size: 15px;
 		width: 62%;
